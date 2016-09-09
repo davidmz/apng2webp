@@ -1,34 +1,36 @@
 var path = require('path');
-var webpack = require("webpack");
+var webpack = require('webpack');
 
 module.exports = [
     {
-        entry: path.join(__dirname, "src", "library", "index.js"),
+        entry: path.join(__dirname, 'src', 'library', 'index.js'),
         output: {
-            path: path.join(__dirname, "lib"),
-            filename: "index.js"
+            path: path.join(__dirname, 'lib'),
+            filename: 'index.js',
+            library: 'apng2webp',
+            libraryTarget: 'umd'
         },
         module: {
             loaders: [
                 {
                     test: /\.js$/,
-                    loader: "babel-loader",
+                    loader: 'babel-loader',
                     exclude: /[\\\/](node_modules|lib)[\\\/]/
                 }
             ]
         }
     },
     {
-        entry: path.join(__dirname, "src", "demo-page", "index.js"),
+        entry: path.join(__dirname, 'src', 'demo-page', 'index.js'),
         output: {
-            path: path.join(__dirname, "docs"),
-            filename: "index.js"
+            path: path.join(__dirname, 'docs'),
+            filename: 'index.js'
         },
         module: {
             loaders: [
                 {
                     test: /\.js$/,
-                    loader: "babel-loader",
+                    loader: 'babel-loader',
                     exclude: /[\\\/](node_modules|lib)[\\\/]/
                 },
                 {
