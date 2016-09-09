@@ -1,6 +1,6 @@
 {
   "name": "apng2webp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript APNG to WebP converter",
   "homepage": "https://github.com/davidmz/apng2webp",
   "repository": "davidmz/apng-js",

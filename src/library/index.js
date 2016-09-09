@@ -66,7 +66,7 @@ export default function (apngData) {
                     int24ToArray(top >> 1),
                     int24ToArray(width - 1),
                     int24ToArray(height - 1),
-                    int24ToArray(frame.delay * 10),
+                    int24ToArray(frame.delay),
                     new Uint8Array([MUX_NO_BLEND])
                 ];
 

@@ -186,7 +186,7 @@
 	            var width = right - left,
 	                height = bottom - top;
 
-	            var aChunk = [int24ToArray(left >> 1), int24ToArray(top >> 1), int24ToArray(width - 1), int24ToArray(height - 1), int24ToArray(frame.delay * 10), new Uint8Array([MUX_NO_BLEND])];
+	            var aChunk = [int24ToArray(left >> 1), int24ToArray(top >> 1), int24ToArray(width - 1), int24ToArray(height - 1), int24ToArray(frame.delay), new Uint8Array([MUX_NO_BLEND])];
 
 	            canvas.width = width;
 	            canvas.height = height;
